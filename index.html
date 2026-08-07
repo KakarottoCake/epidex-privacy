@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epidex Privacy Policy</title>
+</head>
+<body>
+<style>
+  :root {
+    --bg: #F7F7FB;
+    --bg-raised: #FFFFFF;
+    --ink: #1A1B23;
+    --ink-soft: #4B4B57;
+    --ink-faint: #7A7A88;
+    --border: #E3E1EC;
+    --accent: #4457C4;
+    --accent-soft: #6B5FA8;
+    --accent-tint: #DFE1FF;
+    --amber: #9A5B00;
+    --amber-tint: #FFDDB8;
+    --focus: #4457C4;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F1015;
+      --bg-raised: #16171D;
+      --ink: #EDEDF3;
+      --ink-soft: #C7C5D0;
+      --ink-faint: #8B8A96;
+      --border: #2B2C35;
+      --accent: #BAC3FF;
+      --accent-soft: #CFC0FF;
+      --accent-tint: #23264A;
+      --amber: #FFB870;
+      --amber-tint: #3A2A10;
+      --focus: #BAC3FF;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+
+  .page {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .frame {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.top {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  .mark-glyph {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    background: linear-gradient(155deg, var(--accent), var(--accent-soft));
+    flex: none;
+  }
+
+  .mark-name {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+  }
+
+  .meta strong {
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 4px 0 0;
+  }
+
+  nav.jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px;
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    margin: 32px 0 48px;
+  }
+
+  nav.jump span.label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  nav.jump a {
+    font-size: 0.82rem;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 5px 11px;
+    border-radius: 999px;
+    background: var(--accent-tint);
+    white-space: nowrap;
+  }
+
+  nav.jump a:hover,
+  nav.jump a:focus-visible {
+    text-decoration: underline;
+  }
+
+  section {
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+    scroll-margin-top: 24px;
+  }
+
+  section:first-of-type {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+
+  h2 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 24px 0 8px;
+    color: var(--ink);
+  }
+
+  p {
+    margin: 0 0 14px;
+    max-width: 68ch;
+    color: var(--ink-soft);
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  strong { color: var(--ink); font-weight: 600; }
+
+  a { color: var(--accent); }
+
+  ul {
+    margin: 0 0 14px;
+    padding-left: 1.2em;
+    max-width: 68ch;
+    color: var(--ink-soft);
+  }
+
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+
+  li strong { color: var(--ink); }
+
+  .card {
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 18px 0;
+  }
+
+  .card p:last-child { margin-bottom: 0; }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+
+  .fact {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    background: var(--bg-raised);
+  }
+
+  .fact .k {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--ink-faint);
+    margin-bottom: 6px;
+  }
+
+  .fact .v {
+    font-size: 0.92rem;
+    color: var(--ink);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin: 18px 0;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+
+  .table-wrap table { margin: 0; }
+
+  th, td {
+    text-align: left;
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  thead th {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    background: var(--bg);
+    font-weight: 700;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  td.perm {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.82rem;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+
+  footer.bottom {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto !important; }
+  }
+
+  html { scroll-behavior: smooth; }
+</style>
+
+<div class="page">
+  <div class="frame">
+    <header class="top">
+      <div class="mark">
+        <div class="mark-glyph" aria-hidden="true"></div>
+        <div class="mark-name">Epidex</div>
+      </div>
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <span><strong>Effective</strong> August 7, 2026</span>
+        <span><strong>Applies to</strong> the Epidex Android app</span>
+        <span><strong>Contact</strong> <a href="mailto:frameonemods@gmail.com">frameonemods@gmail.com</a></span>
+      </div>
+      <p class="lede">
+        Epidex is built to work without an account. This policy explains, plainly, what that
+        actually means for your data — what stays on your phone, what a handful of third parties
+        see, and why.
+      </p>
+    </header>
+
+    <nav class="jump" aria-label="Sections">
+      <span class="label">On this page</span>
+      <a href="#summary">The short version</a>
+      <a href="#library">Your library</a>
+      <a href="#ads">Advertising</a>
+      <a href="#purchases">Purchases</a>
+      <a href="#sources">Show &amp; movie data</a>
+      <a href="#permissions">Permissions</a>
+      <a href="#control">Your control</a>
+      <a href="#children">Children</a>
+      <a href="#changes">Changes</a>
+    </nav>
+
+    <section id="summary">
+      <p class="eyebrow">Overview</p>
+      <h2>The short version</h2>
+      <p>
+        Epidex has no login, no account, and no server of its own — there is nowhere for your
+        watch history to be sent, because Epidex has nothing to send it to. Two things do touch
+        an outside party: the ads that keep the app free, and a purchase if you choose to remove
+        them. Both are covered below in full.
+      </p>
+      <div class="grid-2">
+        <div class="fact">
+          <div class="k">Account required</div>
+          <div class="v">No — none exists</div>
+        </div>
+        <div class="fact">
+          <div class="k">Library data leaves your device</div>
+          <div class="v">Only if you export it yourself</div>
+        </div>
+        <div class="fact">
+          <div class="k">Analytics or crash reporting</div>
+          <div class="v">None</div>
+        </div>
+        <div class="fact">
+          <div class="k">Advertising identifier used</div>
+          <div class="v">Yes, for ads only — see below</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="library">
+      <p class="eyebrow">Your library</p>
+      <h2>What Epidex stores, and where</h2>
+      <p>
+        Everything you track — titles, progress, ratings, notes, tags, tier lists, custom
+        covers — is written to a database that lives only on your device. Epidex has no backend,
+        so there is no copy of your library anywhere else, and no way for anyone, including the
+        developer, to see it.
+      </p>
+      <p>
+        <strong>Backups are something you start, not something that happens automatically.</strong>
+        The Export as JSON and Export as CSV actions in Settings write a file to a location you
+        choose, using Android's own file picker — Epidex never uploads it anywhere on your
+        behalf. Restoring works the same way, from a file you select.
+      </p>
+    </section>
+
+    <section id="ads">
+      <p class="eyebrow">Advertising</p>
+      <h2>How the ad banner works</h2>
+      <p>
+        Epidex shows a small banner ad, served by Google AdMob, on the My List and Discover
+        screens only. To request an ad, AdMob uses your device's <strong>advertising ID</strong> —
+        a resettable identifier, not your name, email, or anything else that identifies you
+        personally.
+      </p>
+      <p>
+        If you're in the EU, EEA, UK, or Switzerland, Epidex asks for your consent — through
+        Google's own consent prompt — before any ad request that uses that identifier for
+        personalization. You can decline and still see ads; they'll simply be less tailored.
+      </p>
+      <p>
+        Google's own use of this data is governed by their policies, not Epidex's:
+        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">
+          How Google uses information from sites or apps that use our services</a>.
+      </p>
+    </section>
+
+    <section id="purchases">
+      <p class="eyebrow">Purchases</p>
+      <h2>The Supporter purchase</h2>
+      <p>
+        Epidex offers a one-time, optional purchase — <strong>Supporter</strong> — that removes
+        ads and unlocks a few extras. It's handled entirely by <strong>Google Play Billing</strong>.
+        Epidex never sees your payment method, card number, or billing address; Google handles
+        the transaction and simply tells the app "purchased" or not. That result is stored on
+        your device so the unlock still works offline.
+      </p>
+    </section>
+
+    <section id="sources">
+      <p class="eyebrow">Show &amp; movie data</p>
+      <h2>Where the show, movie and anime data comes from</h2>
+      <p>
+        Searching or browsing sends your search text to whichever of these public catalogues can
+        answer it. None of them receive your name, an account identifier, or anything else about
+        you — just the query, the way a web search would work.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Source</th><th>Used for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>TVmaze</td><td>TV shows, episodes, air dates</td></tr>
+            <tr><td>Shikimori</td><td>Anime metadata and schedules</td></tr>
+            <tr><td>Jikan (MyAnimeList)</td><td>Anime fallback and enrichment</td></tr>
+            <tr><td>Wikidata</td><td>Movies, with no account or key needed</td></tr>
+            <tr><td>Kitsu</td><td>Anime titles and artwork</td></tr>
+            <tr><td>TMDB, TheTVDB</td><td>Optional — only if you add your own free API key</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        TMDB and TheTVDB are opt-in: Epidex works fully without them, and only contacts them at
+        all if you've pasted your own key into Settings.
+      </p>
+    </section>
+
+    <section id="permissions">
+      <p class="eyebrow">Permissions</p>
+      <h2>What Epidex asks Android for</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="perm">INTERNET</td>
+              <td>To fetch show/movie/anime data and to request ads.</td>
+            </tr>
+            <tr>
+              <td class="perm">ACCESS_NETWORK_STATE</td>
+              <td>To check for a connection before making a request, rather than failing blindly.</td>
+            </tr>
+            <tr>
+              <td class="perm">POST_NOTIFICATIONS</td>
+              <td>For optional local alerts when something you track is about to air. Requested
+              during onboarding, and the app works fully if you decline.</td>
+            </tr>
+            <tr>
+              <td class="perm">RECEIVE_BOOT_COMPLETED</td>
+              <td>To re-arm those release alerts after your device restarts — otherwise a reboot
+              would silently cancel them.</td>
+            </tr>
+            <tr>
+              <td class="perm">AD_ID</td>
+              <td>Required by Android whenever an app includes an ad SDK, so AdMob can request
+              ads as described above.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="control">
+      <p class="eyebrow">Your control</p>
+      <h2>Deleting your data</h2>
+      <p>
+        Because everything lives on your device, deleting it is entirely in your hands:
+      </p>
+      <ul>
+        <li><strong>Uninstalling the app</strong> removes your library and every preference along with it.</li>
+        <li><strong>Clearing app storage</strong> in Android's system settings does the same, without a full uninstall.</li>
+        <li><strong>Removing a title</strong> from within Epidex deletes its progress, tags, and episode history immediately.</li>
+      </ul>
+      <p>
+        There is no account to delete and no server-side copy to request the removal of, because
+        none exists.
+      </p>
+    </section>
+
+    <section id="children">
+      <p class="eyebrow">Children</p>
+      <h2>Children's privacy</h2>
+      <p>
+        Epidex is not directed at children under 13, and the developer does not knowingly collect
+        personal information from anyone in that age group. Because the app collects no personal
+        information at all beyond the advertising identifier described above, this is largely
+        moot — but it's stated here for clarity.
+      </p>
+    </section>
+
+    <section id="changes">
+      <p class="eyebrow">Changes</p>
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy changes, the effective date at the top of this page will change with it.
+        Meaningful changes — anything that affects what data is collected or how it's used — will
+        also be reflected in the app's Play Store listing.
+      </p>
+    </section>
+
+    <footer class="bottom">
+      Questions about this policy or how Epidex handles data can go to
+      <a href="mailto:frameonemods@gmail.com">frameonemods@gmail.com</a>.
+    </footer>
+  </div>
+</div>
+</body>
+</html>
